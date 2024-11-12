@@ -4,7 +4,33 @@
   padding: 15px;
   box-sizing: border-box;
 
-
-  
   border: 2px solid blue;
+}
+
+.info-container{
+  display: flex;
+
+  justify-content: center;
+
+  margin: 0.5rem;
+  width: 95vw;
+  height: 75vh;
+  border: 2px solid orange;
+  
+}
+
+.left-div{
+
+  width: 40vw;
+  height: 60vh;
+  margin: 1rem;
+  border: 2px solid green;
+}
+
+.right-div{
+
+  width: 40vw;
+  height: 60vh;
+  margin: 1rem;
+  border: 2px solid purple;
 }
