@@ -1,0 +1,15 @@
+h1{
+    font-size: 3rem;
+}
+
+.title-div{
+    
+    /* border: 2px solid yellow; */
+}
+
+.navbar-div{
+    display: flex;
+    justify-content: space-around;
+
+    border: 2px solid red;
+}
