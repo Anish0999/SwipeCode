@@ -9,26 +9,12 @@ import './App.css'
 
 function App() {
   return (
-    <div className='page-container'>
-      <NavBar/>
-
-        <div className='info-container'>
-
-          {/* <Routes>
-            <Route path="/home-page" element={<HomePage/>}></Route>
-          </Routes> */}
-
-          <div className='left-div'>
-            
-          </div>
-
-          <div className='right-div'>
-
-          </div>
-
-        </div>
-
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage/>}></Route>
+        <Route path="/start" element={<GetStarted/>}></Route>
+      </Routes>
+    </Router>
   )
 }
 

@@ -13,7 +13,7 @@ function HomePage() {
         <div className='info-container'>
 
           <div className='left-div'>
-            
+            <GetStarted></GetStarted>
           </div>
 
           <div className='right-div'>
