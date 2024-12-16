@@ -1,0 +1,55 @@
+.card-container{
+    height: 70vh;
+    width: 35vw;
+    border: 2px solid red;
+}
+
+.q-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    border: 2px solid blue;
+}
+
+.desc{
+
+    /* font-size: 1.5rem; */
+
+    height: 15vh;
+    padding: 0.5rem;
+    border: 2px solid green;
+}
+
+.choices{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 30vh;
+    border: 2px solid purple;
+}
+
+.qtype{
+    display: flex;
+    align-items: center;
+    padding: 0.3rem;
+    font-size: 1.5rem;    
+    height: 5vh;
+    border: 2px solid orange;
+}
+
+.q-options{
+    display: flex;
+
+    border: 2px solid yellow;
+}
+
+.card-btn{
+    background-color: rgb(13, 2, 218);
+    text-align: center;
+    margin: 1rem;
+    width: 20vw;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+}
