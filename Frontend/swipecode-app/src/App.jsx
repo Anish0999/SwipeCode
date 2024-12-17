@@ -5,6 +5,9 @@ import NavBar from './components/navbar'
 import GetStarted from './components/getstarted'
 import HomePage from './pages/homepage'
 import QuizCard from './components/quizcard'
+import PlayGround from './components/playground'
+import ValidAnagram from './components/validAnagram'
+
 
 import './App.css'
 
@@ -14,6 +17,9 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage/>}></Route>
         <Route path="/start" element={<GetStarted/>}></Route>
+
+        <Route path="/playground" element={<PlayGround/>}></Route>
+        <Route path="/validAnagram" element={<ValidAnagram/>}></Route>
 
         <Route path="/card" 
           element={
@@ -26,10 +32,10 @@ function App() {
             //     An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, 
             //     typically using all the original letters exactly once."
 
-            qA= "Both words have the same length."
-            qB= "Both words have the same first letter."
-            qC= "Both words have the same first letter."
-            qD= "Both words have the same last letter."
+            qA= "Compare the lengths of two words. If they are equal, the words are anagrams."
+            qB= "Convert each word to an array, sort the arrays, and then compare them."
+            qC= "Check if the first letter of the first word is present in the second word."
+            qD= "Compare the number of vowels in both words. If the count matches, the words are anagrams."
 
             Abool= {true}
             Bbool= {false}
@@ -51,8 +57,8 @@ function App() {
             qC= "Both words have the same first letter."
             qD= "Both words have the same last letter."
 
-            Abool= {true}
-            Bbool= {false}
+            Abool= {false}
+            Bbool= {true}
             Cbool= {false}
             Dbool= {false}
 
