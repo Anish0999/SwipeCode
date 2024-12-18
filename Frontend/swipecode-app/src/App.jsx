@@ -20,6 +20,7 @@ function App() {
 
         <Route path="/playground" element={<PlayGround/>}></Route>
         <Route path="/validAnagram" element={<ValidAnagram/>}></Route>
+        
 
         <Route path="/card" 
           element={

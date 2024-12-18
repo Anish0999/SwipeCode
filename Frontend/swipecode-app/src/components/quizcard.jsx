@@ -55,17 +55,21 @@ function QuizCard(props) {
 
     function handleSubmit() {
 
-        console.log("test")
+        console.log("selected " + selected)
 
-        if(selected === "A" && props.Abool || selected === "B" && props.Bbool || 
+        if(selected === null) {
+            window.alert("Please select an option before submitting!");
+            props.getDataFunction(false, false)
+        }
+        else if(selected === "A" && props.Abool || selected === "B" && props.Bbool || 
            selected === "C" && props.Cbool || selected === "D" && props.Dbool) {
-            props.getDataFunction(true)
+           props.getDataFunction(true, true)
         }
         else{
-            props.getDataFunction(false)
+            props.getDataFunction(false, true)
         }
     }
-
+   
     return (
 
         <div className='card-container'>
@@ -101,8 +105,6 @@ function QuizCard(props) {
                 <div className='qtype2'>{props.qD}</div>
                 </div>
 
-              
-               
             </div>
 
             {props.Abool}
@@ -110,13 +112,17 @@ function QuizCard(props) {
             {props.Cbool}
             {props.Dbool}
             
+            {/* () => handleSubmit() */}
+
             <div className='q-options'>
-                <div className='card-btn' onClick={handleSubmit}>
+                <div className='card-btn' onClick={() => handleSubmit()}>
                     <h3>Submit</h3>
                 </div>
 
                 <div className='card-btn'>
+                    <a href={props.questionLink} target='_blank' style={{color: "white", textDecoration: "none"}}>
                     <h3>View Question</h3>
+                    </a>
                 </div>
             </div>
 
