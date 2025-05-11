@@ -1,6 +1,7 @@
 import QuizCard from "./quizcard";
 import { useState } from "react";
 import { useEffect } from "react";
+import FinishCard from "./finishCard";
 
 function ValidAnagram() {
 
@@ -66,7 +67,7 @@ function ValidAnagram() {
       questionLink={"https://leetcode.com/problems/valid-anagram/description/"}
     />
   );
-  
+
   questions.push(
    
     <QuizCard
@@ -128,6 +129,8 @@ function ValidAnagram() {
       questionLink={"https://leetcode.com/problems/valid-anagram/description/"}
     />
   );
+
+  questions.push(<FinishCard finalScore={correctAnswers} questionLink={"https://leetcode.com/problems/valid-anagram/description/"}/>)
 
   return <div>{questions[index]}</div>;
 }
