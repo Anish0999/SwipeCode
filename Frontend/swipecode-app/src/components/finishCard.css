@@ -1,3 +1,14 @@
+.finish-card-container{
+    height: 45vh;
+    width: 35vw;
+    border: 2px solid red;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+}
+
 .your-score{
     height: 15vh;
     width: 35vw;
