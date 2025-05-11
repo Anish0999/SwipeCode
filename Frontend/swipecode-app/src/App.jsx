@@ -7,7 +7,7 @@ import HomePage from './pages/homepage'
 import QuizCard from './components/quizcard'
 import PlayGround from './components/playground'
 import ValidAnagram from './components/validAnagram'
-
+import FinishCard from './components/finishCard';
 
 import './App.css'
 
@@ -20,6 +20,7 @@ function App() {
 
         <Route path="/playground" element={<PlayGround/>}></Route>
         <Route path="/validAnagram" element={<ValidAnagram/>}></Route>
+        <Route path="/finishCard" element={<FinishCard finalScore={3}/>}></Route>
         
 
         <Route path="/card" 
